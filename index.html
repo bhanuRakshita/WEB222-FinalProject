@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHANU RAKSHITA PAUL || Personal Portfolio</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Third-Part CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Header -->
+<section class="header">
+    <!-- Navbar  -->
+    <nav>
+        
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Main text Box  -->
+    <div class="text-box">
+        <img src="./Images/me.png" alt="PROFILE-IMAGE">
+        <h1>Hi! I am Rakshita</h1>
+        <h2>Web Developer</h2>
+        <p>I'm an international student from India currently pursuing Computer Programming and Analysis at Seneca College, Toronto. I'm passionate about Web Development and am looking forward to building new projects and working with latest web technologies.</p>
+        <a download="BHANU RAKSHITA PAUL - RESUME.pdf" href="./assets/Bhanu rakshita Paul_Resume.pdf"><button class="hero-btn"><i class="uil uil-import"></i>Resume</button></a>
+        <a href="#about" class="hero-btn">About Me</a>
+    </div>
+</section>
+
+<!--About Section-->
+<section class="about" id="about">
+    <h1 class="heading">ABOUT</h1><br>
+    
+    <div class="about-container">
+        <div class="about-card">
+            <span class="abt-span">Basic Information</span>
+            <div class="about-info">
+            <pre><strong>AGE:</strong>              20</pre>
+            <pre><strong>EMAIL:</strong>            brpaul@myseneca.ca</pre>
+            <pre><strong>LANGUAGE:</strong>         English, Hindi, Punjabi</pre>
+            <pre><strong>CLASS SECTION:</strong>    NDD</pre>
+            <pre><strong>STUDENT ID:</strong>       143428217</pre>
+            <pre><strong>INSTRUCTOR:</strong>       Mr. Muath Alzghool</pre>
+        </div>
+        </div>
+        <div class="about-card">
+            <span class="abt-span">About Me and Academic Honesty</span>
+            <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+            <p><span><strong>Date: </strong></span>Aug 10, 2022</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+    <h1>EDUCATION</h1>
+    <p></p>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="course-col">
+            <h3>Completed Schooling, Sacred Heart Senior Secondary School</h3>
+            <p>2022</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="course-col">
+            <h3>Computer Programming and Analysis, Seneca College</h3>
+            <p>2022 - 2024</p>
+        </div>
+    </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="contact" id="contact">
+    <h1 class="heading">CONTACT ME</h1><br>
+    <div class="contact-content">
+        <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" class="name format">
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <!-- email type wasnt used because form is validated using js so it wasn't needed -->
+            <input type="text" name="email" id="email" placeholder="Email address..." class="email format">
+
+            <!-- Address -->
+            <label for="address">Current Address:</label>
+            <textarea name="address" id="address" cols="30" rows="2" placeholder="Enter your full address" class="address"></textarea>
+
+            <!-- Datalist for cities in Canada -->
+            <label for="name">City:</label>
+            <input class="format" type="text" id="city" name="city" list="suggestions" placeholder="Enter your City"/>
+            <datalist id="suggestions">
+                <option label="Barrie" value="Barrie"></option>
+                <option label="Calgary" value="Calgary"></option>
+                <option label="Charlottetown" value="Charlottetown"></option>
+                <option label="Chibougamau" value="Chibougamau"></option>
+                <option label="Chilliwack" value="Chilliwack"></option>
+                <option label="Cold Lake" value="Cold Lake"></option>
+                <option label="Dorval" value="Dorval"></option>
+                <option label="Edmonton" value="Edmonton"></option>
+                <option label="Flin Flon" value="Flin Flon"></option>
+                <option label="Hamilton" value="Hamilton"></option>
+                <option label="Iqualuit" value="Iqualuit"></option>
+                <option label="Ottawa" value="Ottawa"></option>
+                <option label="Miramichi" value="Miramichi"></option>
+                <option label="Montreal" value="Montreal"></option>
+                <option label="Red Deer" value="Red Deer"></option>
+                <option label="Scarborough" value="Scarborough"></option>
+                <option label="St. John" value="St. John"></option>
+                <option label="St. John's" value="St. John's"></option>
+                <option label="Toronto" value="Toronto"></option>
+                <option label="Vancouver" value="Vancouver"></option>
+                <option label="Whitehorse" value="Whitehorse"></option>
+                <option label="Winnipeg" value="Winnipeg"></option>
+                <option label="Yellowknife" value="Yellowknife"></option>
+            </datalist>
+
+            <!-- Postal Code -->
+            <label for="pCode">Postal Code:</label>
+            <input name="Postal_Code" type="text" id="pCode" class="format" placeholder="Postal Code">
+
+            <!-- Purpose of this message -->
+            <br>
+            <div class="radio-btns">
+                <label for="purpose">What is the purpose of this message?</label><br><br>
+                <input type="radio" id="question" name="purpose" value="question">
+                <label for="question">Question</label><br>
+                <input type="radio" id="comment" name="purpose" value="comment">
+                <label for="comment">Comment</label><br>
+                <input type="radio" id="hiring" name="purpose" value="hiring">
+                <label for="hiring">Hiring</label>
+            </div>
+            <br>
+
+            <!-- Message -->
+            <label for="message" id="message_label"> Message for me:</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message..." class="address"></textarea>
+
+            <!-- Field of work selection -->
+            <label for="field">What is your field of work?</label>
+            <select name="field" id="field" size=5>
+                <option value="Engineering, Manufacturing, & Technology" selected>Engineering, Manufacturing, & Technology</option>
+                <option value="Business, Management, & Administration">Business, Management, & Administration</option>
+                <option value="Communications & Information Systems">Communications & Information Systems</option>
+                <option value="Agriculture, Food, & Natural Resources">Agriculture, Food, & Natural Resources</option>
+                <option value="Health Science Technology">Health Science Technology</option>
+                <option value="Human Services">Human Services</option>
+                <option value="Other">Other</option>
+             </select>                       
+
+            <!-- Buttons -->
+            <div class="form-btns">
+                <input type="submit" value="Send" class="hero-btn">
+                <input type="reset" value="Clear" class="hero-btn">
+            </div>
+            <div id="error"></div>
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<section class="footer">
+    <h4>&copy; Bhanu Rakshita Paul, 2022</h4>
+    <p>This website has been created as the final project for the WEB222 course at Seneca College, Toronto<br> All rights reserved</p>
+
+    <div class="icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="https://bit.ly/Bhanu_Rakshita"><i class="fa fa-linkedin"></i></a>
+    </div>
+    
+</section>
+
+<script src="./assets/script.js"></script>
+</body>
+</html>
